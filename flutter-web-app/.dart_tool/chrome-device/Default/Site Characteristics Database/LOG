@@ -1,1 +1,7 @@
-2022/11/19-19:12:15.208 3574 Reusing MANIFEST C:\Users\fusco\AppData\Local\Temp\flutter_tools.708bfe52\flutter_tools_chrome_device.797285d3\Default\Site Characteristics Database/MANIFEST-000001
+2022/11/19-22:47:23.588 4234 Reusing MANIFEST C:\Users\fusco\AppData\Local\Temp\flutter_tools.50c128f5\flutter_tools_chrome_device.695a1ed6\Default\Site Characteristics Database/MANIFEST-000001
+2022/11/19-22:47:23.589 4234 Recovering log #3
+2022/11/19-22:47:23.589 4234 Level-0 table #6: started
+2022/11/19-22:47:23.592 4234 Level-0 table #6: 130 bytes OK
+2022/11/19-22:47:23.592 4234 Recovering log #6
+2022/11/19-22:47:23.592 4234 Reusing old log C:\Users\fusco\AppData\Local\Temp\flutter_tools.50c128f5\flutter_tools_chrome_device.695a1ed6\Default\Site Characteristics Database/000006.log 
+2022/11/19-22:47:23.594 4234 Delete type=0 #3
