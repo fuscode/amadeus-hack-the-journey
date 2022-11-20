@@ -39,11 +39,29 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: PreferredSize(
-        preferredSize: Size(screenSize.width, 70),
-        child: TopBarContents(_opacity),
-      ),
+      appBar: screenSize.width < 800
+          ? AppBar(
+              iconTheme: IconThemeData(color: Colors.blue),
+              backgroundColor: Colors.white.withOpacity(_opacity),
+              elevation: 0,
+              title: Text(
+                'Home',
+                style: TextStyle(
+                  color: Color(0xFF077bd7),
+                  fontSize: 26,
+                  fontFamily: 'Raleway',
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 3,
+                ),
+              ),
+            )
+          : PreferredSize(
+              preferredSize: Size(screenSize.width, 70),
+              child: TopBarContents(_opacity),
+            ),
+      drawer: MenuDrawer(),
       body: SingleChildScrollView(
+        controller: _scrollController,
         child: Column(
           children: [
             Stack(
@@ -53,16 +71,21 @@ class _HomePageState extends State<HomePage> {
                     height: screenSize.height * 0.65,
                     width: screenSize.width,
                     child: Image.asset(
-                      'assets/images/background.png',
+                      'assets/images/back.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Column(
                   children: [
-                    FloatingQuickAccessBar(screenSize: screenSize),
+                    // FloatingQuickAccessBar(screenSize: screenSize),
+                    SizedBox(height: screenSize.height / 1.5),
                     FeaturedHeading(screenSize: screenSize),
-                    FeaturedTiles(screenSize: screenSize)
+                    FeaturedTiles(screenSize: screenSize),
+                    MainHeading(screenSize: screenSize),
+                    MainCarousel(),
+                    SizedBox(height: screenSize.height / 10),
+                    BottomBar(),
                   ],
                 )
               ],
