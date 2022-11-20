@@ -1,10 +1,2 @@
-2022/11/19-23:37:43.542 4258 Log #3: 1 ops saved to Table #7 OK
-2022/11/19-23:37:43.544 4258 Archiving C:\Users\fusco\AppData\Local\Temp\flutter_tools.ad9f5b66\flutter_tools_chrome_device.5b9c08f8\Default\Site Characteristics Database/000003.log: OK
-2022/11/19-23:37:43.549 4258 Log #6: 2 ops saved to Table #8 OK
-2022/11/19-23:37:43.550 4258 Archiving C:\Users\fusco\AppData\Local\Temp\flutter_tools.ad9f5b66\flutter_tools_chrome_device.5b9c08f8\Default\Site Characteristics Database/000006.log: OK
-2022/11/19-23:37:43.550 4258 Table #4: 1 entries OK
-2022/11/19-23:37:43.550 4258 Table #6: 1 entries OK
-2022/11/19-23:37:43.550 4258 Table #7: 1 entries OK
-2022/11/19-23:37:43.550 4258 Table #8: 2 entries OK
-2022/11/19-23:37:43.552 4258 Archiving C:\Users\fusco\AppData\Local\Temp\flutter_tools.ad9f5b66\flutter_tools_chrome_device.5b9c08f8\Default\Site Characteristics Database/MANIFEST-000001: OK
-2022/11/19-23:37:43.559 4258 **** Repaired leveldb C:\Users\fusco\AppData\Local\Temp\flutter_tools.ad9f5b66\flutter_tools_chrome_device.5b9c08f8\Default\Site Characteristics Database; recovered 4 files; 583 bytes. Some data may have been lost. ****
+2022/11/19-23:37:43.562 4258 Reusing MANIFEST C:\Users\fusco\AppData\Local\Temp\flutter_tools.ad9f5b66\flutter_tools_chrome_device.5b9c08f8\Default\Site Characteristics Database/MANIFEST-000001
+2022/11/19-23:37:43.568 359c Moved #8 to level-1 193 bytes OK: files[ 3 1 0 0 0 0 0 ]
