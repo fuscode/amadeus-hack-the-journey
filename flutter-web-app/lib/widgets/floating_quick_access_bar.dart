@@ -75,19 +75,29 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
               ? widget.screenSize.width / 12
               : widget.screenSize.width / 5,
         ),
-        child: Card(
-          elevation: 5,
-          child: Padding(
-            padding: EdgeInsets.only(
-              top: this.widget.screenSize.height / 50,
-              bottom: this.widget.screenSize.height / 50,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: generateRowElements(),
-            ),
-          ),
-        ),
+        child: widget.screenSize.width < 800
+            ? Column(
+                children: [
+                  for (int i = 0; i < items.length; i++)
+                    Card(
+                      elevation: 4,
+                      child: InkWell(child: Text(items[i])),
+                    )
+                ],
+              )
+            : Card(
+                elevation: 5,
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    top: this.widget.screenSize.height / 50,
+                    bottom: this.widget.screenSize.height / 50,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: generateRowElements(),
+                  ),
+                ),
+              ),
       ),
     );
   }

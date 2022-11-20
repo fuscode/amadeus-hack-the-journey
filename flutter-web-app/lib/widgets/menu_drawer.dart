@@ -11,7 +11,6 @@ class MenuDrawer extends StatelessWidget {
       child: Container(
         color: Color(0xFF6158e6),
         child: Padding(
-
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -20,7 +19,7 @@ class MenuDrawer extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Text(
-                  'Login',
+                  'Home',
                   style: TextStyle(color: Colors.white, fontSize: 22),
                 ),
               ),
@@ -34,7 +33,7 @@ class MenuDrawer extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Text(
-                  'Sign Up',
+                  'About us',
                   style: TextStyle(color: Colors.white, fontSize: 22),
                 ),
               ),
@@ -48,7 +47,7 @@ class MenuDrawer extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Text(
-                  'Read',
+                  'Our Partners',
                   style: TextStyle(color: Colors.white, fontSize: 22),
                 ),
               ),
@@ -62,7 +61,7 @@ class MenuDrawer extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Text(
-                  'Contact Us',
+                  'FAQ',
                   style: TextStyle(color: Colors.white, fontSize: 22),
                 ),
               ),
@@ -70,9 +69,9 @@ class MenuDrawer extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Copyright © 2021 | DBestech',
+                    'Copyright © 2022 | TaNoScript',
                     style: TextStyle(
-                      color: Colors.blueGrey.shade300,
+                      color: Colors.white60,
                       fontSize: 14,
                     ),
                   ),
